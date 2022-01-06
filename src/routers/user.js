@@ -5,6 +5,7 @@ const router= new express.Router()
 const multer = require('multer');
 const sharp = require('sharp');
 const {sendWelcomeEmail,sendCancelationEmail}=require('../emails/account')
+const validator = require('validator');
 
 router.post('/users', async (req,res)=>{
     const user=new User(req.body)
@@ -82,7 +83,7 @@ router.patch('/users/me',auth,async (req,res)=>{
         await req.user.save()
         res.send(req.user)
     } catch (e) {
-        res.status(500).send(e)
+        res.status(400).send(e)
     }
 })
 

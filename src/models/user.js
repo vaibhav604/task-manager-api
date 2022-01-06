@@ -16,8 +16,8 @@ const userSchema=new mongoose.Schema({
         unique:true,
         trim: true,
         lowercase:true,
-        validator(value){
-            if(!isEmail(value))
+        validate(value){
+            if(!validator.isEmail(value))
             {
                 throw new Error("Please provide correct email")
             }
