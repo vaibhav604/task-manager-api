@@ -18,8 +18,10 @@ Task manager application based on REST API design structure and built using Node
 
 The below link will direct you to the postman collection. It allows you to interact with the live API.
 
+**Note:** Make sure to select `Task Manager Api(prod)` environment
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/a593e5920e1c60c4efc6?action=collection%2Fimport#?env%5BTask%20Manager%20Api%20(prod)%5D=dW5kZWZpbmVk)
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/a593e5920e1c60c4efc6?action=collection%2Fimport)
 
 
 ## API Endpoints
@@ -42,4 +44,3 @@ The below link will direct you to the postman collection. It allows you to inter
 | LogoutAll User| /users/logoutall              | POST      |
 | Upload Avatar | /users/me/avatar              | PATCH     |
 | Delete Avatar | /users/me/avatar              | DELETE    |
-
