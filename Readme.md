@@ -1,6 +1,6 @@
 ## Task Manager REST Api
 
-Task manager application based on REST API design structure and built using NodeJS with Express and MongoDB Atlas database. 
+Task manager application based on REST API design structure and built using **NodeJS** with **Express** and **MongoDB Atlas** database. App has been tested using **Jest** framework.
 
 **Features**
 
